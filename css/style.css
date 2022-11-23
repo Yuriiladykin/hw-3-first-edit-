@@ -16,14 +16,6 @@ font-family: 'Roboto', sans-serif; */
 }
 /* переменные */
 
-/* универсальный  селектор (*) ко всем элементам*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-/* универсальный селектор */
-
 /* селектор body (на весь контент) */
 body {
   font-family: var(--main-font);
@@ -54,8 +46,12 @@ h3 {
 }
 /* цвет текста для h2/h3/p */
 
+.container {
+  width: 1600;
+}
+
 /* header */
-.header {
+.header .container {
   background: var(--nav-bg);
 }
 /* logo */
