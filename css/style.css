@@ -46,12 +46,17 @@ h3 {
 }
 /* цвет текста для h2/h3/p */
 
+/* параметры контейнера */
 .container {
-  width: 1600;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0px 15px;
 }
+/* параметры контейнера */
 
 /* header */
-.header .container {
+
+.header {
   background: var(--nav-bg);
 }
 /* logo */
@@ -68,6 +73,10 @@ h3 {
 /* logo */
 
 /* nav */
+.nav-list,
+.nav-adress {
+  margin: 0px;
+}
 .nav-list .nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -100,7 +109,7 @@ h3 {
   color: var(--accent-color);
 }
 /* adress */
-/* header */
+/* /header */
 
 /* main */
 /* hero */
@@ -108,6 +117,7 @@ h3 {
   background: var(--hero-bg);
 }
 .hero-title {
+  margin: 0px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
@@ -135,17 +145,21 @@ h3 {
 }
 /* button */
 /* sections */
+
 .features-title {
+  margin-top: 0px;
   font-size: 14px;
   line-height: 1.172;
   text-transform: uppercase;
 }
 .features-text {
+  margin: 0px;
   font-size: 14px;
   line-height: 1.714;
 }
 .activity,
 .team {
+  margin-top: 0px;
   font-size: 36px;
   line-height: 1.171;
   text-align: center;
@@ -154,6 +168,9 @@ h3 {
 .activity-list {
   background: var(--section-bg);
 }
+.activity-img-list {
+  margin-bottom: 0px;
+}
 .name {
   font-weight: 500;
   font-size: 16px;
@@ -161,12 +178,16 @@ h3 {
   text-align: center;
 }
 .profession {
+  margin-bottom: 0px;
   font-size: 14px;
   line-height: 1.714;
   text-align: center;
 }
 .team-card {
   background: var(--team-bg);
+}
+.team-card-list {
+  margin-bottom: 0px;
 }
 /* main */
 
@@ -184,8 +205,11 @@ h3 {
 .footer {
   background: var(--footer-bg);
 }
-.adress-list {
+.adress {
   font-style: normal;
+}
+.address-list {
+  margin-bottom: 0px;
 }
 .foot {
   color: #ffffff;
@@ -224,4 +248,7 @@ h3 {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+.last {
+  margin-bottom: 0px;
 }
