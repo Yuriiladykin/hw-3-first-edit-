@@ -57,18 +57,33 @@ h3 {
 /* header */
 
 .header {
-  background: var(--nav-bg);
   padding-top: 24px;
   padding-bottom: 25px;
+
   border: 1px solid #ececec;
+  background: var(--nav-bg);
 }
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* logo */
+.navigation {
+  display: flex;
+}
+
 .logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  color: #000000;
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
-  color: #000000;
 }
 .logo .logo-color {
   color: var(--accent-color);
@@ -76,11 +91,34 @@ h3 {
 /* logo */
 
 /* nav */
-.nav-list,
-.nav-adress {
+
+.nav-list {
+  display: flex;
   margin: 0px;
+  margin-left: 93px;
+  padding: 0px;
 }
+
+.nav-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-adress {
+  display: flex;
+  margin: 0px;
+  margin-left: auto;
+  padding: 0px;
+}
+
+.nav-adress .item + .item {
+  margin-left: 50px;
+}
+
 .nav-list .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
