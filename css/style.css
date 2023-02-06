@@ -13,6 +13,7 @@ font-family: 'Roboto', sans-serif; */
   --footer-bg: #2f303a;
   --team-card-bg: #ffffff;
   --team-bg: #f5f4fa;
+  --card-gap: 30px;
 }
 /* переменные */
 
@@ -41,6 +42,7 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 /* цвет текста для h2/h3/p */
@@ -203,13 +205,13 @@ h3 {
 .features-flex {
   display: flex;
   margin: 0px;
-  margin-left: -30px;
+  margin-left: calc(-1 * var(--card-gap));
   padding: 0px;
 }
 
 .features-flex .item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
+  flex-basis: calc(100% / 3 - var(--card-gap));
+  margin-left: var(--card-gap);
 }
 
 .features-title {
@@ -249,13 +251,13 @@ h3 {
 .activity-img-list {
   display: flex;
   margin: 0px;
-  margin-left: -30px;
+  margin-left: calc(-1 * var(--card-gap));
   padding: 0px;
 }
 
 .activity-img-list .item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
+  flex-basis: calc(100% / 3 - var(--card-gap));
+  margin-left: var(--card-gap);
 }
 
 .activity-img-list .item img {
@@ -281,7 +283,7 @@ h3 {
 }
 
 .team-card-list .item {
-  width: 270px; 
+  width: 270px;
   padding-bottom: 30px;
 
   background-color: var(--team-card-bg);
@@ -329,7 +331,7 @@ h3 {
   display: inline-block;
   margin-bottom: 20px;
   padding: 0px;
-  
+
   color: #ffffff;
 }
 
@@ -368,7 +370,7 @@ h3 {
   padding-bottom: 50px;
 }
 
-.filter-flex{
+.filter-flex {
   display: flex;
   justify-content: center;
   margin: 0px;
@@ -417,38 +419,39 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   margin: 0px;
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: calc(-1 * var(--card-gap));
+  margin-left: calc(-1 * var(--card-gap));
   padding: 0px;
 }
 
 .work-flex .item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-top: 30px;
-  margin-left: 30px;
-  padding-bottom: 20px;
+  flex-basis: calc(100% / 3 - var(--card-gap));
+  margin-top: var(--card-gap);
+  margin-left: var(--card-gap);
   width: 370px;
-  border: 1px solid #eeeeee;
+  /* border: 1px solid #eeeeee; */
 
   background-color: var(--team-card-bg);
 }
 
-.work-img {
-  margin-bottom: 20px;
+.work-card-discription {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
 }
 
 .workname {
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-top: 0px;
   margin-bottom: 4px;
-  margin-top: 0;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .work-description {
-  margin: 0px 24px;
+  margin: 0px;
 }
 
 .last {
